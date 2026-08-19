@@ -152,28 +152,22 @@ button.button, button.button:hover {
 	border-radius: 5px !important
 }
 
-/* BIGGEST HEADER ("___"'s DEN) */
+
+/* BIGGEST HEADER */
 
 h1 {
-	background: linear-gradient(#3C527C, #e9efff);
-    background-clip: text;  
-    color: transparent;
-	font-size: 60px;
-	text-align: center;
-    text-transform: uppercase;
-        font-family: 'League Spartan';
-    text-shadow: none;
-}
-
-h1 {
-    font-size: 0;
+    font-size: 0 !important;
+    text-align: center;
 }
 
 h1::before {
     content: "✦ LUMI'S NEST ✦";
+    display: block;
     font-size: 60px;
+    line-height: normal;
     background: linear-gradient(#3C527C, #e9efff);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     font-family: 'League Spartan';
     text-align: center;
