@@ -152,7 +152,7 @@ button.button, button.button:hover {
 	border-radius: 5px !important
 }
 
-/* BIGGEST HEADER (✦"___"'s NEST✦) */
+/* BIGGEST HEADER ("___"'s NEST) */
 
 h1 {
 	background: linear-gradient(#3C527C, #e9efff);
@@ -163,6 +163,10 @@ h1 {
     text-transform: uppercase;
         font-family: 'League Spartan';
     text-shadow: none;
+}
+
+h1::after, h1::before {
+    content: " ✦ "
 }
 
 /* MEDIUM HEADER */
