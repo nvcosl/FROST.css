@@ -1,0 +1,855 @@
+/*CSS CREDITS:*/
+/*Katie (#106445): template*/
+/*Pandora (#144118): player box overhaul, other misc codes*/
+
+
+/* FONT (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+
+
+/* BACKGROUND */
+
+body {
+	background: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostbg.png') center center fixed;
+	background-size: 100%;
+	font-family: 'League Spartan';
+	color: #fff;
+    text-shadow: 0px 0px 5px #20345D;
+    font-size: 15px;
+
+
+}
+
+
+/* MAIN PANEL */
+
+/* RIGHT SIDE */
+.container.main {
+	background: linear-gradient(to right,#0E152F,rgba(14,22,47,0.57),#0E152F);
+	border: none;
+	box-shadow: 0px 0px 10px #808CA9;
+	border-radius: 5px
+}
+
+/* LEFT SIDE */
+.col-md-9 {
+	background: none;
+        border-right: none
+}
+
+/* TOPBAR ("Welcome back, ___") */
+
+.topbar {
+	background: #000;
+	color: #ffffff;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   border-bottom: solid 2px #808CA9;
+    border-right: solid 2px #808CA9;
+    border-left: solid 2px #808CA9;
+
+
+}
+
+/* NAVBAR (Den/Crossroads/Etc.) */
+
+.navbar {
+	background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostpattern.png") repeat center center,linear-gradient(to right, #20345D, #808CA9, #20345D);
+	border: solid 2px #bfcbe8;
+	color: #ffffff;
+    box-shadow: inset 0px 0px 10px #bfcbe8 !important;
+	border-radius: 5px
+}
+
+/* NAVBAR BUTTON TEXT COLOR */
+
+.navbar li a {
+	color: #ffffff !important;
+        transition: 0.2s;
+    font-family: "League Spartan";
+}
+
+/* NAVBAR BUTTON HOVER */
+
+.navbar li a:hover {
+	background: transparent !important;
+	border-bottom: none;
+	color: #ffffff !important;
+	border-radius: 0px;
+        transform: scale(1.1);
+    text-shadow: 0px 0px 10px #dddddd;
+    transition: 0.2s;
+}
+
+/* BREADCRUMB (Home / Den) */
+
+.breadcrumb {
+	background: linear-gradient(to right,#0E152F,#20345D,#0E152F) !important;
+    border: solid 2px #3C527C;
+	border-radius: 5px
+}
+
+/* BREADCRUMB TEXT */
+
+.breadcrumb .active {
+	color: #ffffff
+}
+
+/* CSS CREDIT */
+
+.breadcrumb::after {
+        content: "Template by Katie (#106445) / Edited by Felid (#114852)";
+        color: #ffffff;
+        position: absolute;
+        right: 13%; /* (This may need adjusting) */
+        z-index: 100
+    }
+
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%
+        }
+    }
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%
+        }
+    }
+/* BOOKMARK BUTTON */
+
+input.floatright, input.floatright:hover {
+	background: #808CA9 !important;
+        border: none !important;
+	border-radius: 0px;
+	color: #000 !important;    
+}
+
+/* SWITCH ACCOUNT BUTTON */
+
+button.button, button.button:hover {
+	background: #808CA9;
+        border: solid 2px #ffffff !important;
+	border-radius: 5px;
+        text-shadow: none !important;
+	color: #000000 !important
+}
+
+/* ALERTS (ie. "Your lionesses have returned from hunting!") */
+
+.alert,
+.alert-warning,
+.alert-danger {
+	background: #0E152F !important;
+	border: solid 2px #808CA9;
+	color: #ffffff;
+	border-radius: 5px !important
+}
+
+/* BIGGEST HEADER ("___"'s DEN) */
+
+h1 {
+	background: linear-gradient(#3C527C, #e9efff);
+    background-clip: text;
+    color: transparent;
+	font-size: 60px;
+	text-align: center;
+    text-transform: uppercase;
+        font-family: 'League Spartan';
+    text-shadow: none;
+}
+
+/* MEDIUM HEADER */
+
+h2 {
+	color: #ffffff;
+	font-size: 24px;
+	text-align: center
+}
+
+
+/* SMALL HEADER */
+
+h3 {
+	color: #ffffff !important;
+	font-size: 14px !important
+}
+
+/* RIGHT SIDE PANEL HEADER */
+
+.sidebar h3 {
+	background: linear-gradient(#3C527C, #e9efff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+        font-size: 22px !important;
+    text-transform: uppercase;
+        font-family: 'League Spartan';
+    transition: 0.2s;
+    text-shadow: none;
+}
+
+.sidebar h3:hover {
+    -webkit-text-fill-color: rgba(255,255,255,0.32) !important;
+    text-shadow: 0px 0px 10px #ffffff;
+    transition: 0.2s;
+}
+
+/* RIGHT SIDE PANELS */
+.panel {
+	background: url(https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostpattern.png) repeat center center, linear-gradient(45deg,#3C527C,#010c22) !important;
+    box-shadow: inset 0px 0px 10px #808CA9 !important;
+	border: solid 2px #808CA9 !important;
+	color: #ffffff !important;
+	border-radius: 5px;
+    
+}
+
+.panel-body {
+    font-size: 14px;
+}
+
+/* ENERGY BAR BACKGROUND */
+.progress {
+	background: #000;
+	color: #000 !important;
+	border-radius: 5px !important;
+    border: solid 1px #000;
+    box-shadow: 0px 0px 3px #000;
+}
+
+/* ENERGY BAR COLOR */
+
+/*impression*/
+.progress-bar {
+	background: linear-gradient(90deg,#fff,#bfcbe8);
+	border-radius: 5px !important;
+    box-shadow: inset 0px 0px 3px #fff;
+}
+
+
+/* ENERGY BAR TEXT */
+.progress div {
+	color: #fff !important;
+    text-shadow: 0px 0px 5px #20345D,0px 0px 5px #20345D;
+
+}
+
+/* CHAT */
+
+.s-chat-message:nth-child(even) /* Even Numbered Messages */ {
+	background: #111938 !important;
+        color: #ffffff !important;
+	border: none !important
+}
+
+.s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
+	background: #0E152F !important;
+        color: #ffffff !important;
+	border: none !important
+}
+
+.s-chat-message__pinned /* Pinned Message */ {
+	background: #000000 !important;
+        color: #ffffff !important;
+	border-bottom: solid 2px #808CA9 !important;
+}
+
+.s-chat-message_timestamp /* Timestamps */ {
+	color: #bfcbe8 !important;
+}
+
+div#chatMessageContainer {
+	border: solid 2px #808CA9 !important;
+}
+
+button#label_currentChannel /* Channel Button ie. Main, Sales */ {
+	background: #000 !important;
+        color: #ffffff !important;
+	border: none !important
+}
+
+/* LION INFO TABLE (Level, Stats, Territory Count, Etc.) */
+
+
+/* PANEL BACKGROUND COLOR */
+
+.table {
+	background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostpattern.png") repeat center center,linear-gradient(#3C527C, #808CA9);
+    box-shadow: inset 0px 0px 20px #bfcbe8 !important;
+	color: #ffffff !important;
+	border: solid 2px #bfcbe8 !important;
+	border-collapse: separate;
+	border-radius: 5px;
+}
+
+/* HEADERS COLOR (King Name + Title, "There are _ lions with mutations in _'s pride.") */
+
+.top,
+.bottom,
+th {
+	background: linear-gradient(to right,#0E152F,#20345D,#0E152F) !important;
+	color: #fff !important;
+	border-radius: 0px
+}
+
+td.bottom a {
+        text-decoration: none !important
+}
+
+/* Color behind "Level, Stats, Branch, Territory" etc. */
+
+.inner-table .left {
+	background: #20345D !important;
+        color: #ffffff;
+	border-bottom-left-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+    border: solid 1px #0E152F;
+    border-right: solid 2px #fff;
+}
+
+
+
+/* Color behind the number of all of the things above */
+
+.inner-table .right {
+	background: #3C527C;
+	border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    border: solid 1px #20345D;
+    text-shadow: 0px 0px 5px #0d1a33 !important;
+}
+
+td.right {
+	border-radius: 0px !important
+}
+
+/* IGNORE */
+.right_odd {
+	background: none !important
+}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", "View Pride Overview", and cave/mound names */
+
+.cave-grid,
+.mound-grid {
+	background: #0E152F;
+	border: none !important;
+	border-radius: 5px !important
+}
+
+
+/* FEED ALL, PLAY ALL */
+
+.feature {
+	background: #0E152F !important;
+	color: #fff !important;
+	border: solid 2px #808CA9 !important;
+	border-radius: 5px !important;
+}
+
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" Panels */
+
+.feature,
+div.left {
+	background: #0E152F;
+	border: solid 2px #808CA9 !important;
+	border-radius: 5px !important;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+
+div.left:hover {
+    background: #131c3c;
+    box-shadow: 0px 0px 8px #808CA9;
+}
+
+/* Block of color behind "Territory Description, Player Name, Avatar URL" etc. */
+
+.table .left {
+	background: #0E152F;
+        border-radius: 0px
+}
+
+/* Color behind the content of the elements listed above */
+
+input,
+select,
+textarea {
+	background: #0E152F !important;
+	border: none !important;
+	border-radius: 5px !important;
+	color: #ffffff !important;
+	box-shadow: none !important;
+	text-shadow: none !important
+}
+
+/* ACCOUNT OPTIONS PANELS  (Friend Requests Toggles, etc.) */
+
+.item-header {
+	background: #0E152F !important;
+	color: #ffffff  !important;
+	border-radius: 5px !important;
+}
+
+.item {
+	background: #20345D !important;
+	border: none !important;
+	border-radius: 5px !important
+}
+
+/* ACCOUNT OPTIONS ON/OFF TOGGLE SWITCH */
+
+div.slider.round /* Background */ {
+	background: #000 !important
+}
+
+div.slider.round::before /* Circle Part */ {
+	background: #bfcbe8 !important
+}
+
+/* Copyright, Terms of Service, CoC, etc. */
+
+
+div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
+        color: #ffffff !important;
+        text-shadow: none !important
+}
+
+
+
+/* LINK COLOR */
+
+a:link,
+a:visited {
+	color: #bfcbe8 !important;
+    transition: 0.2s !important;
+    font-weight: normal;
+}
+
+/* LINK HOVER COLOR */
+
+a:hover {
+	color: #ffffff !important;
+    transition: 0.2s !important;
+}
+
+/* BOX CONTAINER */
+
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex
+}
+
+/*divider*/
+.boxcontainer hr {
+    margin: 0px;
+    border-top: solid 2px #808CA9;
+    width: 70%;
+}
+
+.boxcontainer h1 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+
+.boxcontainer h2 {
+    margin: 0px;
+    color: #bfcbe8;
+}
+
+
+.boxcontainer h3 {
+    font-size: 20px !important;
+    margin: 0px;
+    color: #bfcbe8 !important;
+}
+
+
+/* BOXES */
+
+.smallbox {
+	float: left;
+	background: #20345D;
+    box-shadow: inset 0px 0px 10px #808CA9, inset 0px 100px 150px #0E152F;
+	color: #ffffff;
+	padding: 10px;
+	border: solid 2px #808CA9;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 100px;
+	width: 28.4%;
+	overflow: auto;
+    scrollbar-color: #bfcbe8 #0E152F;
+
+
+}
+
+.mediumbox {
+	float: left;
+	background: #20345D;
+    box-shadow: inset 0px 0px 10px #808CA9, inset 0px 100px 150px #0E152F;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 100px;
+	width: 43.8%;
+	overflow: auto;
+    border: solid 2px #808CA9;
+    scrollbar-color: #bfcbe8 #0E152F;
+}
+
+.largebox {
+	float: left;
+	background: #20345D;
+        box-shadow: inset 0px 0px 10px #808CA9, inset 0px 100px 150px #0E152F;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	min-height: 150px;
+	width: 90%;
+	overflow: auto;
+    border: solid 2px #808CA9;
+    scrollbar-color: #bfcbe8 #0E152F;
+}
+
+
+.largeboxscroll {
+	float: left;
+	background: #20345D;
+        box-shadow: inset 0px 0px 10px #808CA9, inset 0px 100px 150px #0E152F;
+	color: #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	height: 225px;
+	width: 90%;
+	overflow: scroll;
+    border: solid 2px #808CA9;
+    scrollbar-color: #bfcbe8 #0E152F;
+}
+
+
+
+/* SCROLL BAR */
+
+/* WIDTH */
+::-webkit-scrollbar {
+	width: 10px
+}
+
+/* BACKGROUND */
+
+::-webkit-scrollbar-track {
+	background: #0E152F
+}
+
+/* "THUMB" */
+
+::-webkit-scrollbar-thumb {
+	background: #bfcbe8;
+	border-radius: 5px
+}
+
+/* LION AND USER AVATAR */
+
+div#lion_image {
+	border-radius: 5px !important;
+    opacity: 1;
+	overflow: hidden;
+    border: solid 2px #bfcbe8;
+    box-shadow: 0px 0px 5px #0E152F;
+    transition: 0.2s;
+	margin-top: 15px; /* May need adjusting */
+	margin-left: 12px /* May need adjusting */
+}
+
+
+/* lion image hover effect*/
+div#lion_image:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    opacity: 1;
+}
+
+
+table#player img {
+	border-radius: 5px !important;
+	overflow: hidden
+}
+
+/* LIODEN LOGO REPLACER */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+	content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostlogo.png');
+    transition: 0.2s;
+}
+
+/*logo hover effect*/
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+/* CAVE / MOUND IMAGES */
+.cave-grid {
+    transition: 0.2s;
+    border: solid 2px #808CA9 !important;
+}
+
+
+/*caves hover effect*/
+.cave-grid:hover {
+    background: #131c3c;
+    box-shadow: 0px 0px 8px #808CA9;
+    
+}
+
+/*images*/
+img[src$="//static.lioden.com/images/layout/unsortedlionsbanner.png"] {
+    content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostunsorted.png') !important;
+    filter: grayscale(0.6)
+}
+
+img[src$="//static.lioden.com/images/layout/nestingbanner.png"] {
+    content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostnesting.png') !important;
+    filter: grayscale(0.6)
+}
+
+img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
+    content: url('https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostoverview.png') !important;
+    filter: grayscale(0.6)
+}
+
+img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/snowydenBG.png') !important
+}
+
+.mound-grid img /* Mound(s) */ {
+	width: 0;
+	height: 0;
+	padding-top: 0px;
+	padding-right: 100px
+}
+
+.mound-grid {
+    border: solid 2px #808CA9 !important;
+    transition: 0.2s;
+}
+
+.mound-grid:hover {
+    background: #131c3c;
+    box-shadow: 0px 0px 8px #808CA9;
+}
+
+/* MAKES BOXES/DESCRIPTION SHOW ON MOBILE */
+@media only screen and (max-width: 767px) {
+        .container.main .hidden-xs {
+            display: block !important;
+        }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	display: block !important;
+}
+@media only screen and (min-width: 1200px) {
+		div.quote {
+			width: 790px;
+		}
+	}
+
+/*i dont know what this is and at this point im too afraid to ask*/
+div.center.b {
+    color: #ffffff !important
+}
+
+
+
+/* Codes made by Pandora #144118  
+Codes may be edited, used in commissions or for personal use
+Please do not remove credit
+*/
+
+/* REMOVE ICONS (message/gift/create trade/wishlist/view trades) */
+ 
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1) {
+    font-size:0px;
+}   
+ 
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1)::after {
+    content:'Message';
+    font-size:18px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3) {
+    font-size:0px;
+}   
+ 
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3)::after {
+    content:'Send Gift!';
+    font-size:18px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5) {
+    font-size:0px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5)::after {
+    content:'Create Trade';
+    font-size:18px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(1) {
+    font-size:0px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(1)::after {
+    content:'View Wishlist';
+    font-size:14px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(3) {
+    font-size:0px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(3)::after {
+    content:'View Trades';
+    font-size:14px;
+}
+    
+/* REMOVE ICONS (refer a friend/wishlist) */
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(1) {
+    font-size:0px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(1)::after {
+    content:'Refer a Friend';
+    font-size:18px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(3) {
+    font-size:0px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(3)::after {
+    content:'View Your Wishlist';
+    font-size:18px;
+}
+    
+/* REMOVE ICON (block member) */
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a {
+    font-size:0px;
+    
+}
+ 
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a::after {
+    content:'Block Member';
+    font-size:14px;
+}
+ 
+/* REMOVE ICON (friend request) */
+#player > tbody > tr:nth-child(3) > td:nth-child(2) > a {
+    font-size:0px;
+    
+}
+ 
+#player > tbody > tr:nth-child(3) > td:nth-child(2) > a::after {
+    content:'Friend Request';
+    font-size:14px;
+}
+    
+/* REMOVE WHITE LINE */
+    #player hr {
+display:none;
+}
+
+/* REMOVE 'Member ID' */
+div.floatright > small {
+    display:none;
+}
+
+/* MAKE DYNASTY/ACHIEVEMENT/ETC. ONE ROW */
+div.col-md-3.col-sm-6.col-xs-6.mb-2.dynastylist {
+width: 20%;}
+
+div.col-md-3.col-sm-6.col-xs-6.mb-2.dynastylist img {
+    filter: grayscale(0.8)
+}
+
+/*Comment Box*/
+#commentBox {
+background: linear-gradient(rgba(0,0,0,0.5),rgba(14,22,47,0.35));
+border: 2px solid #808CA9 !important;
+border-radius: 5px !important;
+}
+
+
+div.comment {
+    background: #0E152F !important;
+    border-bottom: 2px solid #808CA9;
+    color: #ffffff;
+}
+
+
+div#makeComment {
+    background: #000 !important;
+border: 2px #808CA9 solid;
+    border-radius: 5px !important;
+}
+
+
+input#comment {background: linear-gradient(to right,#3C527C,#000) !important;
+color: #ffffff !important;
+}
+
+input#postComment {
+    background: #3C527C !important;
+}
+
+
+small.text-muted {color: #ffffff;}
+small.text-muted a {color: #ffffff;}
+
+
+input[type="button"].bad {background: #3C527C !important;}
+
+
+/* mobile background - fixed image stretching code by tawnycollar #251887 */
+@media screen and (max-width: 768px){
+body {
+background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostbg.png") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+html:not(.nolayout) body:after {
+content:"";
+position:fixed; 
+top:0;
+height:160vh;
+left:0;
+right:0;
+z-index:-1; 
+background: url("https://raw.githubusercontent.com/felidaze/css-public/refs/heads/main/frostbg.png") center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+    }
+}
+
