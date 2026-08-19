@@ -155,22 +155,17 @@ button.button, button.button:hover {
 /* BIGGEST HEADER */
 
 h1 {
-    background: linear-gradient(#3C527C, #e9efff);
-    background-clip: text;
-    color: transparent;
-    font-size: 60px;
-    text-align: center;
-    text-transform: uppercase;
-        font-family: 'League Spartan';
-    text-shadow: none;
+    font-size: 0;
 }
 
 h1::before {
-    content: "✦";
-}
-
-h1::after {
-    content: "✦";
+    content: "✦ LUMI'S NEST ✦";
+    font-size: 60px;
+    background: linear-gradient(#3C527C, #e9efff);
+    background-clip: text;
+    color: transparent;
+    font-family: 'League Spartan';
+    text-align: center;
 }
 
 /* MEDIUM HEADER */
