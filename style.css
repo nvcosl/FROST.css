@@ -165,12 +165,18 @@ h1 {
     text-shadow: none;
 }
 
-h1::before {
-    content: "✦";
+h1 {
+    font-size: 0;
 }
 
-h1::after {
-    content: "✦";
+h1::before {
+    content: "✦ LUMI'S NEST ✦";
+    font-size: 60px;
+    background: linear-gradient(#3C527C, #e9efff);
+    background-clip: text;
+    color: transparent;
+    font-family: 'League Spartan';
+    text-align: center;
 }
 
 /* MEDIUM HEADER */
