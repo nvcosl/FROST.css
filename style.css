@@ -165,8 +165,12 @@ h1 {
     text-shadow: none;
 }
 
-h1::after, h1::before {
-    content: " ✦ "
+h1::before {
+    content: "✦";
+}
+
+h1::after {
+    content: "✦";
 }
 
 /* MEDIUM HEADER */
