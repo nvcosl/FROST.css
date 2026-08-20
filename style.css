@@ -83,7 +83,7 @@ body {
     transition: 0.2s;
 }
 
-/* BREADCRUMB (Home / Den) */
+/* BREADCRUMB (Home / Nest) */
 
 .breadcrumb {
 	background: linear-gradient(to right,#0E152F,#20345D,#0E152F) !important;
@@ -163,11 +163,14 @@ h1::before {
     content: "✦ LUMI'S NEST ✦";
     font-size: 60px;
 	
-    background: linear-gradient(#3C527C, #e9efff);
+	background: linear-gradient(#3C527C, #e9efff);
     background-clip: text;
     color: transparent;
-    font-family: 'League Spartan';
-    text-align: center;
+	font-size: 60px;
+	text-align: center;
+    text-transform: uppercase;
+        font-family: 'League Spartan';
+    text-shadow: none;
 }
 
 /* MEDIUM HEADER */
