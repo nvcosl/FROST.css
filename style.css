@@ -156,11 +156,13 @@ button.button, button.button:hover {
 
 h1 {
     font-size: 0;
+	text-align: center;
 }
 
 h1::before {
     content: "✦ LUMI'S NEST ✦";
     font-size: 60px;
+	
     background: linear-gradient(#3C527C, #e9efff);
     background-clip: text;
     color: transparent;
