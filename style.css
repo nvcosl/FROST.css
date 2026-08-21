@@ -866,3 +866,12 @@ background-size: cover;
 .smallbox {
     overflow-y: auto;
 }
+
+.largebox {
+    height: 250px;
+}
+
+.mediumbox,
+.smallbox {
+    height: 150px;
+}
