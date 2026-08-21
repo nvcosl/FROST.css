@@ -878,14 +878,14 @@ background-size: cover;
 
 .largebox img.leftimage {
     float: left;
-    width: 200px;
+    width: 300px;
     margin-right: 20px;
     margin-bottom: 10px;
 }
 
 .largebox img.rightimage {
     float: right;
-    width: 200px;
+    width: 300px;
     margin-left: 20px;
     margin-bottom: 10px;
 }
