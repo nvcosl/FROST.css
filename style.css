@@ -648,6 +648,10 @@ img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
     content: url('https://static.lioden.com/images/dynamic/backgrounds/snowydenBG.png') !important
 }
 
+img[src$="//static.lioden.com/images/blank.png"] {
+    content: url("https://static.lioden.com/images/dynamic/backgrounds/snowydenBG.png") !important;
+}
+
 .mound-grid img /* Mound(s) */ {
 	width: 0;
 	height: 0;
