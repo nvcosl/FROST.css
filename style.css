@@ -861,3 +861,8 @@ background-size: cover;
     }
 }
 
+.largebox,
+.mediumbox,
+.smallbox {
+    overflow-y: auto;
+}
