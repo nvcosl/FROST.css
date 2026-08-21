@@ -644,7 +644,7 @@ img[src$="//static.lioden.com/images/layout/prideoverviewbanner.png"] {
     filter: grayscale(0.6)
 }
 
-img[src$="//static.lioden.com/images/dynamic/backgrounds/snowydenBG.png"] {
+img[src$="//static.lioden.com/images/layout/cavedefault.jpg"] {
     content: url('https://static.lioden.com/images/dynamic/backgrounds/snowydenBG.png') !important
 }
 
